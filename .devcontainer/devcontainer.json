@@ -1,0 +1,9 @@
+{
+  "name": "video-lab",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": { "version": "3.11" },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y ffmpeg unzip fonts-noto fonts-noto-color-emoji && pip install edge-tts requests numpy pillow"
+}
